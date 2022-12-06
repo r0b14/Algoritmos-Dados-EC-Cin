@@ -14,6 +14,7 @@
 | :---------------- | :--------------------------------------------------------------------------- | :----- |
 | Notion Disciplina | [Pagina](https://www.notion.so/r0b14/IF672-594764cc65fe4846ab7a15e8b28e4cb0) | Ok     |
 | Classroom         | [Pagina](https://classroom.google.com/u/3/c/NTcyNTEwNDI0MzE0)                | Ok     |
+|                   |                                                                              |        |
 
 ---
 
@@ -24,6 +25,7 @@
 | Notion       | [Pagina](https://r0b14.notion.site/IF669-c7570ec489ce4413bcf3f9e540794889) | Ok     |
 | Documentação | [Pagina](https://devdocs.io/c/)                                            | Ok     |
 | C - IME-USP  | [Pagina](https://www.ime.usp.br/~pf/algoritmos/index.html#C-language)      | Ok     |
+|              |                                                                            |        |
 
 ---
 
@@ -33,6 +35,7 @@
 | :----------- | :------------------------------------------------------------------------- | :----- |
 | Notion       | [Pagina](https://r0b14.notion.site/IF669-c7570ec489ce4413bcf3f9e540794889) | Ok     |
 | Documentação | [Pagina](https://devdocs.io/c/)                                            | Ok     |
+|              |                                                                            |        |
 
 ---
 
@@ -43,10 +46,11 @@
 | Disciplina | [Pagina](https://sites.google.com/a/cin.ufpe.br/if672) | Ok     |
 | C Tutor    | [Pagina](https://pythontutor.com/c.html#mode=edit)     | Ok     |
 | VJudge     | [Pagina](https://vjudge.net/)                          | Ok     |
+|            |                                                        |        |
 
 ---
 
-# Problemas no Ubuntu 20.04
+# Problemas com o compilador no VSCode no Ubuntu 20.04, 22.04
 
 ### 1. GCC - não executava o programa.
 
