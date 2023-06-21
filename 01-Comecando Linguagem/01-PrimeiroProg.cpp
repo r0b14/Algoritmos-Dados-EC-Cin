@@ -11,9 +11,29 @@ int main() {
     cout << "* Welcome to the game *" << endl;
     cout << "***********************" << endl;
 
-    int value1 = 110, value2 = 220;
-    cout << "O valor da variável: "<< value1 << endl;
-    cout << "O valor da variável2 "<< value2 << " é referente a voltagem." << endl;
+    int randomValue = 52, kick = 0;
+    cout << "O valor da variável: "<< randomValue << endl;
+
+    cout << "Digite o valor do chute: ";
+    cin >> kick;
+
+    // Comparação de valores entre variáveis
+
+    cout << "O valor chutado: " << kick << endl;
+    while (randomValue != kick) {
+        if (kick > randomValue) {
+            cout << "O chute é maior que o random" << endl;
+            cout << "Digite o novo valor: ";
+            cin >> kick;
+        }
+        else if (kick < randomValue) {
+            cout << "O chute é menor que o random" << endl;
+            cout << "Digite o novo valor: ";
+            cin >> kick;
+        }
+
+    }   
+    cout << "Parabéns, você acertou o valor" << endl;
 
     return 0;
 }
