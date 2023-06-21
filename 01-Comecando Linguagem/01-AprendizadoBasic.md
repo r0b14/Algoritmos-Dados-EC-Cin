@@ -40,6 +40,13 @@ A função para fazer a demosntração na tela é a
     }
     ```
 
+    Inserindo antes da frase
+    ```Cpp
+        cout << "***********************" << endl;
+        cout << endl << "* Welcome to the game *" << endl;
+        cout << "***********************" << endl << endl;
+    ```
+
 * **Exibindo valor da variável no texto**
     A opção de concatenação de texto com valores de variáveis.
     ```Cpp
@@ -116,3 +123,35 @@ Nesse caso é preciso usar uma biblioteca chamada `#<string>`.
 
         auto name= "Manoel Silva";
 
+### 🔢 Booleano
+
+* `bool` -> É um variável que armazena um valor lógico, entre 0 e 1. Caso a condição seja verdadeira, ela armazena 1, caso seja falsa, armazena 0.
+
+    ```Cpp
+        int randomValue = 52, kick = 0;
+        cout << "O valor da variável: "<< randomValue << endl;
+
+        cout << "Digite o valor do chute: ";
+        cin >> kick;
+
+        /**
+         * Comparação de valores entre variáveis
+         * Usando Comparação Boolean
+        **/
+        bool diferente = kick == randomValue;
+        bool maior = kick > randomValue;
+
+        while (diferente) {
+            if (maior) {
+                cout << endl << "** O chute é maior que o random **" << endl;
+                cout << "Digite o novo valor: ";
+                cin >> kick;
+            }
+            else {
+                cout << endl << "** O chute é menor que o random **" << endl;
+                cout << "Digite o novo valor: ";
+                cin >> kick;
+            }
+        }   
+        cout << "Parabéns, você acertou o valor" << endl;
+    ```

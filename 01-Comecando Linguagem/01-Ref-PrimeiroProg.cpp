@@ -5,6 +5,7 @@
 #include <string>
 using namespace std;
 
+// Refatorando o Código
 int main() {
     // Tela de apresentação
     cout << "***********************" << endl;
@@ -12,26 +13,22 @@ int main() {
     cout << "***********************" << endl << endl;
 
     int randomValue = 52, kick = 0;
-    cout << "O valor da variável: "<< randomValue << endl;
 
-    cout << "Digite o valor do chute: ";
-    cin >> kick;
-
+    //cout << "O valor da variável: "<< randomValue << endl;
     // Comparação de valores entre variáveis
+    bool diferente = kick == randomValue;
+    bool maior = kick > randomValue;
 
-    //cout << "O valor chutado: " << kick << endl;
-    while (randomValue != kick) {
-        if (kick > randomValue) {
+    while (diferente) {
+        cout << "Digite o valor do chute: ";
+        cin >> kick;
+        
+        if (maior) {
             cout << endl << "** O chute é maior que o random **" << endl;
-            cout << "Digite o novo valor: ";
-            cin >> kick;
         }
         else {
             cout << endl << "** O chute é menor que o random **" << endl;
-            cout << "Digite o novo valor: ";
-            cin >> kick;
         }
-
     }   
     cout << "Parabéns, você acertou o valor" << endl;
 
