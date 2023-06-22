@@ -12,21 +12,22 @@ int main() {
     cout << "* Welcome to the game *" << endl;
     cout << "***********************" << endl << endl;
 
-    int randomValue = 52, kick = 0;
+    int randomValue = 52, kick;
+    int contador = 0;
 
     //cout << "O valor da variável: "<< randomValue << endl;
     // Comparação de valores entre variáveis
-    bool diferente = kick == randomValue;
-    bool maior = kick > randomValue;
 
-    while (diferente) {
+    while (randomValue != kick) {
+        contador++;
+        cout << " " << contador << "° Tentativa" << endl;
         cout << "Digite o valor do chute: ";
         cin >> kick;
         
-        if (maior) {
+        if (kick > randomValue) {
             cout << endl << "** O chute é maior que o random **" << endl;
         }
-        else {
+        else if (kick < randomValue) {
             cout << endl << "** O chute é menor que o random **" << endl;
         }
     }   
