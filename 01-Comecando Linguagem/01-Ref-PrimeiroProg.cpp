@@ -13,10 +13,14 @@ int main() {
     cout << "***********************" << endl << endl;
 
     int randomValue = 52, kick;
-    int contador = 0;
+    int contador = 1;
+    float pontuacao = 1000.0;
 
-    //cout << "O valor da variável: "<< randomValue << endl;
+    // cout << "O valor da variável: "<< randomValue << endl;
     // Comparação de valores entre variáveis
+
+    cout << "Write " << kick << " kick: "<< endl;
+    cin >> kick;
 
     while (randomValue != kick) {
         contador++;
