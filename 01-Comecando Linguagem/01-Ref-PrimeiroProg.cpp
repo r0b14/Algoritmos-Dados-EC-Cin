@@ -12,30 +12,35 @@ int main() {
     cout << "* Welcome to the game *" << endl;
     cout << "***********************" << endl << endl;
 
-    int randomValue = 52, kick;
-    int contador = 1;
-    float pontuacao = 1000.0;
+    const int Num_Secret = 50;
 
-    // cout << "O valor da variável: "<< randomValue << endl;
-    // Comparação de valores entre variáveis
+    int tentativas = 0;
+    bool nao_acerto = true;
+    float pontos = 1000.0;
 
-    cout << "Write " << kick << " kick: "<< endl;
-    cin >> kick;
-
-    while (randomValue != kick) {
-        contador++;
-        cout << " " << contador << "° Tentativa" << endl;
+    while (nao_acerto) {
+        tentativas++;
+        int kick;
+       
+        cout << " " << tentativas << "° Tentativa" << endl;
         cout << "Digite o valor do chute: ";
         cin >> kick;
         
-        if (kick > randomValue) {
+        double calculadorPontuacao = abs(kick - Num_Secret)/2;
+        pontos = pontos - calculadorPontuacao;
+        
+        if (kick > Num_Secret) {
             cout << endl << "** O chute é maior que o random **" << endl;
         }
-        else if (kick < randomValue) {
+        else if (kick < Num_Secret) {
             cout << endl << "** O chute é menor que o random **" << endl;
         }
-    }   
-    cout << "Parabéns, você acertou o valor" << endl;
+        else if (kick == Num_Secret) {
+            nao_acerto = false;
+            cout << endl << "Parabéns, você acertou o valor" << endl;
+            cout << "Sua pontuação Final = "<< pontos << endl;
+        }
+    }
 
     return 0;
 }
