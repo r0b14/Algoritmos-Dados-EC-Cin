@@ -26,7 +26,7 @@ int main() {
         cout << "Digite o valor do chute: ";
         cin >> kick;
         
-        double calculadorPontuacao = abs(kick - Num_Secret)/2;
+        float calculadorPontuacao = abs(kick - Num_Secret)/2.0;
         pontos = pontos - calculadorPontuacao;
         
         if (kick > Num_Secret) {
