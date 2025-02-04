@@ -1,0 +1,35 @@
+Algoritmos Mergesort e Quicksort
+
+### Mergesort
+- Explicação detalhada e implementação começam na página 788.
+- Código da classe `MergeSort` está na Figura 20.5.
+- Implementação do algoritmo (funções `sort`, `sortSubVector` e `merge`) está nas Figuras 20.6 e 20.7.
+- Eficiência do Mergesort explicada na página 791.
+
+### Quicksort
+- Explicação detalhada e algoritmo estão na página 368.
+- Exercício de implementação do `quicksort` na página 369.
+- Comparação de eficiência com outros algoritmos na Figura 20.8.
+
+### Bubble Sort	
+- Explicação e implementação do **Bubble Sort** estão nos **Exercícios 20.5 e 20.6**.
+- Uma explicação adicional está no **Exercício 7.11**, onde há um código para ordenar um array de 10 inteiros usando Bubble Sort.
+
+### **Selection Sort**
+- Explicação e implementação do **Selection Sort** estão na **Seção 8.6**.
+- O exercício **7.31** também propõe uma implementação de Selection Sort recursiva.
+
+### **Insertion Sort**
+- Explicação e implementação do **Insertion Sort** estão na **Seção 7.8**.
+- O exercício **20.3** menciona a comparação entre Insertion Sort e Merge Sort.
+
+### **Shell Sort**
+- Não encontrei menção direta ao **Shell Sort** no livro. Caso queira estudá-lo, posso te ajudar com explicações e implementação em C++.
+
+### **Dicas para estudo**
+1. **Leia a teoria** nas seções indicadas.
+2. **Implemente os algoritmos** em C++ e teste com diferentes conjuntos de dados.
+3. **Analise a complexidade** de cada método e compare o desempenho em vetores ordenados e desordenados.
+4. **Aprimore as versões básicas** dos algoritmos, aplicando otimizações onde possível.
+
+Se precisar de ajuda com o código ou explicações, me avise! 🚀
