@@ -7,6 +7,15 @@ using namespace std;
  * 1. Fiz alguns testes para poder verificar se de fato o alfabeto estava sendo reconhecido de forma inteiro.
  * 
  */
+
+// Função auxiliar para imprimir o vetor
+void printArray(char arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
 int main () {
 
   // Ordenando o alfabeto conforme 
@@ -16,26 +25,36 @@ int main () {
 
   int tam = sizeof(sequence) / sizeof(sequence[0]);
 
-  // Aplicando o bubblesort no vetor sequence
+  // Contadores para estatísticas
+  int comparacoes = 0;
+  int trocas = 0;
+  int iteracoes = 0;
 
-  // (i = começo )
+  cout << "Vetor inicial: ";
+  printArray(sequence, tam);
+  cout << endl;
+
+  // Aplicando o bubblesort no vetor sequence
   for (int i = 0; i < tam-1; i++) {
-    for (int j = tam-1 ; j > i; j--) {
+    iteracoes++;
+    //cout << "\nIteração " << iteracoes << ":\n";
+    for (int j = tam-1; j > i; j--) {
+      comparacoes++;
       if (sequence[j] < sequence[j-1]) {
         swap(sequence[j], sequence[j-1]);
+        trocas++;
       }
     }
-    cout << sequence[i] << " ";
+    
+    cout << "Iteração " << iteracoes << ": ";
+    printArray(sequence, tam);
   }
 
-  /**
-    // Mostrando apenas letras em posições pares
-    for (int i = 0; i < 26; i++) {
-      if (i % 2 == 0) {  // Verifica se o índice é par
-        cout << vector_letter[i] << " ";
-      }
-    }
+  cout << "\nVetor ordenado: ";
+  printArray(sequence, tam);
+  cout << "Número total de comparações: " << comparacoes << endl;
+  cout << "Número total de trocas: " << trocas << endl;
+  cout << "Número total de iterações: " << iteracoes << endl;
 
-    cout << endl;  // Adiciona uma quebra de linha no final
-   */
+  return 0;
 }
