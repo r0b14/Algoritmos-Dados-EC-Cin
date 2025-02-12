@@ -12,13 +12,14 @@ void printArray(char arr[], int size) {
 
 int main() {
     char letters[] = {'R','M','Q','F','P','W','Z','Y','K','A','S','I','O','H','B','J','L','V','U'};
+
     int tam = sizeof(letters) / sizeof(letters[0]);
     
     // Contadores para estatísticas
     int comparacoes = 0;
     int substituicoes = 0;
     int iteracoes = 0;
-    
+
     cout << "Vetor original: ";
     printArray(letters, tam);
     cout << "\nProcesso de ordenação:\n";
@@ -46,10 +47,8 @@ int main() {
         cout << "Iteração " << i << ": ";
         printArray(letters, tam);
     }
-    
     cout << "\nVetor ordenado final: ";
     printArray(letters, tam);
-    
     cout << "\nEstatísticas:";
     cout << "\nNúmero de iterações: " << iteracoes;
     cout << "\nNúmero de comparações: " << comparacoes;
