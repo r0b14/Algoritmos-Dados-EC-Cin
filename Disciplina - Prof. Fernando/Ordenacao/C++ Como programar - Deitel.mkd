@@ -15,15 +15,15 @@ Algoritmos Mergesort e Quicksort
 - Explicação e implementação do **Bubble Sort** estão nos **Exercícios 20.5 e 20.6**.
 - Uma explicação adicional está no **Exercício 7.11**, onde há um código para ordenar um array de 10 inteiros usando Bubble Sort.
 
-### **Selection Sort**
+### Selection Sort
 - Explicação e implementação do **Selection Sort** estão na **Seção 8.6**.
 - O exercício **7.31** também propõe uma implementação de Selection Sort recursiva.
 
-### **Insertion Sort**
+### Insertion Sort
 - Explicação e implementação do **Insertion Sort** estão na **Seção 7.8**.
 - O exercício **20.3** menciona a comparação entre Insertion Sort e Merge Sort.
 
-### **Shell Sort**
+### Shell Sort
 - Não encontrei menção direta ao **Shell Sort** no livro. Caso queira estudá-lo, posso te ajudar com explicações e implementação em C++.
 
 ### **Dicas para estudo**

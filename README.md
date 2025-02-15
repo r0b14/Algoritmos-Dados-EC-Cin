@@ -14,7 +14,7 @@
 | :---------------- | :--------------------------------------------------------------------------- | :----- |
 | Notion Disciplina | [Pagina](https://www.notion.so/r0b14/IF672-594764cc65fe4846ab7a15e8b28e4cb0) | Ok     |
 | Classroom         | [Pagina](https://classroom.google.com/u/3/c/NTcyNTEwNDI0MzE0)                | Ok     |
-|                   |                                                                              |        |
+| Repositório Monitoria | [Pagina](https://github.com/Andreywid/IF672-monitoria.git)               | OK     |
 
 ---
 
