@@ -1,25 +1,5 @@
 #include <stdio.h>
 
-void insertionSort(int arr[], int n) {
-    int i, chave, j;
-    for (i = 1; i < n; i++) {
-        chave = arr[i];
-        j = i - 1;
-        while (j >= 0 && arr[j] > chave) {
-            arr[j + 1] = arr[j];
-            j = j - 1;
-            /**
-                printf("%d - ", i); //representativo
-                for (int k = 0; k < n; k++) {
-                    printf("%d ", arr[k]);
-                }
-                printf("\n"); //representativo
-            */
-        }
-        arr[j + 1] = chave;
-    }
-}
-
 int main() {
     int A[] = {5, 8, 1, 2, 4};
     int tamanho = sizeof(A) / sizeof(A[0]);
@@ -30,7 +10,24 @@ int main() {
     }
     printf("\n");
     
-    insertionSort(A, tamanho);
+    // Algoritmo de ordenação por inserção
+    int i, chave, j;
+    for (i = 1; i < tamanho; i++) {
+        chave = A[i];
+        j = i - 1;
+        while (j >= 0 && A[j] > chave) {
+            A[j + 1] = A[j];
+            j = j - 1;
+            /**
+                printf("%d - ", i); //representativo
+                for (int k = 0; k < tamanho; k++) {
+                    printf("%d ", A[k]);
+                }
+                printf("\n"); //representativo
+            */
+        }
+        A[j + 1] = chave;
+    }
     
     printf("Vetor ordenado: ");
     for (int i = 0; i < tamanho; i++) {
