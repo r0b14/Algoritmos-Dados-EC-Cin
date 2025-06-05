@@ -9,12 +9,13 @@ int main() {
 
   for (int i = 0; i < tam; i++) {
     least = i;
-    for (int j = i+1; j < tam; j++){
-      if (numbers[j] < numbers[least]){
+    for (int j = i + 1; j < tam; j++) {
+      if (numbers[j] < numbers[least]) {
         least = j;
       }
-      swap(numbers[i], numbers[least]); // Troca de posições
     }
+    // realiza a troca somente depois de encontrar o menor elemento
+    swap(numbers[i], numbers[least]);
     cout << numbers[i] << " ";
   }
 }
