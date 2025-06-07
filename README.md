@@ -61,3 +61,15 @@ Para poder resolver o problema da não execução dos programas escritos em C/C+
 ```
 sudo apt-get install gcc
 ```
+
+### Compilando e executando o seu programa em C/C++
+
+Compilando o seu código em c/c++
+
+``` bash
+g++ meu_codigo.cpp -o meu_programa
+```
+
+``` bash
+./meu_programa
+```
