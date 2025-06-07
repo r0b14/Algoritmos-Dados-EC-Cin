@@ -73,3 +73,12 @@ g++ meu_codigo.cpp -o meu_programa
 ``` bash
 ./meu_programa
 ```
+### Running the selection sort test
+
+Compile and run with:
+
+```bash
+g++ tests/test_selectionsort.cpp -o tests/test_selectionsort.out
+./tests/test_selectionsort.out
+```
+
