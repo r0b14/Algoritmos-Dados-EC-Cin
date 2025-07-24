@@ -50,6 +50,26 @@
 
 ---
 
+# Problemas com o compilador no VSCode no Windows 11
+
+
+- Para que você possa compilar, executar e/ou importar um arquivo como entrada, siga os comando abaixo para usar no powershel.
+
+```
+g++ -o nome_do_meu_executavel nome_do_meu_codigo.cpp
+Get-Content .\arquivo_com_inputs.txt | .\meu_executavel
+
+g++ -o aristografosl aristografosl.cpp
+Get-Content .\aristografos1.txt | .\aristografosl
+```
+
+- Caso deseje usar o CMD
+
+```
+g++ -o aristografosl aristografosl.cpp
+aristografosl < aristografos1.txt
+```
+
 # Problemas com o compilador no VSCode no Ubuntu 20.04, 22.04
 
 ### 1. GCC - não executava o programa.
